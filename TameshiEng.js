@@ -9,26 +9,24 @@ bot.once('ready', () => {
     console.log("Bot has started")
 });
 
-bot.on("message", async message => {
+bot.on("message", async message => {    
     var announcement = message.content
     if (message.author.bot) {
         return;
     }
+    else if (message.guild.id == auth.hostGuildID) {
+        if (announcement.charAt(0) == auth.prefix) {
+            const webhook0 = new Discord.WebhookClient(id.id0, token.token0);
+            webhook0.send(announcement);
 
-    else if (announcement.charAt(0) == auth.prefix) {
+            const webhook1 = new Discord.WebhookClient(id.id1, token.token1);
+            webhook1.send(announcement);
 
-
-        console.log(announcement);
-        var lock = false;
-        //Discord.Guild.name == "BotLand" &&
-
-        const webhook0 = new Discord.WebhookClient(id.Tameshi, token.Tameshi);
-        const webhook1 = new Discord.WebhookClient(id.Mgmt, token.Mgmt);
-        webhook0.send(announcement);
-        webhook1.send(announcement);
+            const webhook2 = new Discord.WebhookClient(id.id2, token.token2);
+            webhook2.send(announcement);
+        }
 
     }
-
 });
 
 
