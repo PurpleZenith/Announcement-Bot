@@ -1,35 +1,41 @@
 const Discord = require("discord.js")
-const bot = new Discord.Client();
-const auth = require('./auth.json');
-const id = require('./id.json');
-const token = require('./token.json');
+const auth = require('./auth.json')
+const id = require('./id.json')
+const token = require('./token.json')
+
+const bot = new Discord.Client()
+
+const idArray = JSON.stringify (id)
+const tokenArray = JSON.stringify (token)
+
+const idArray = new Array(id);
+const tokenArray = new Array(token);
+
+
 
 bot.once('ready', () => {
-    console.log(`Logged in as ${bot.user.tag}!`);
+    console.log(`Logged in as ${bot.user.tag}!`)
     console.log("Bot has started")
 });
 
-bot.on("message", async message => {
+bot.on("message", async message => {    
     var announcement = message.content
     if (message.author.bot) {
-        return;
+        return
     }
+    else if (message.guild.id == auth.hostGuildID) {
 
-    else if (announcement.charAt(0) == auth.prefix) {
+        try {
+            if (announcement.charAt(0) == auth.prefix) {
+                for (i = 0; i < 2; i++)
+                    var webhook = new Discord.WebhookClient(idArray[i], tokenArray[i])
+                console.log(idArray[i])
+                webhook.send(announcement)
+            }
+        }
+        catch {
 
-
-        console.log(announcement);
-        var lock = false;
-        //Discord.Guild.name == "BotLand" &&
-
-        const webhook0 = new Discord.WebhookClient(id.Tameshi, token.Tameshi);
-        const webhook1 = new Discord.WebhookClient(id.Mgmt, token.Mgmt);
-        webhook0.send(announcement);
-        webhook1.send(announcement);
-
+        }
     }
-
 });
-
-
 bot.login(auth.token);
