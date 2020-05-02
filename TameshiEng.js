@@ -32,7 +32,7 @@ bot.on("message", async message => {
     }
     else if (message.guild.id == auth.hostGuildID) {
         if (announcement.charAt(0) == auth.prefix) {
-            for (i = 0; i < 2; i++) {
+            for (i = 0; i < idArray.length; i++) {
                 var webhook = new Discord.WebhookClient(idArray[i], tokenArray[i])
                 console.log(idArray[i])
                 webhook.send("", { embeds: [richEmbed] })
