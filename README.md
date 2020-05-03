@@ -11,11 +11,14 @@ The embed can then be altered. After this, as Main is run and the prefix is used
 
 ### Technologies used
 Discord API
+
 Node.js (v12.16.3)
+
 Discord.js, a Node.js module (v12.2.0)
 
 ### Setup
 Host guild: player's guild that will host the bot
+
 Host channel: channel in which user interacts with the bot
 
 ##### Step 1: Configure hostChannelID
