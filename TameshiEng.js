@@ -1,9 +1,9 @@
 const Discord = require("discord.js")
-const auth = require('./auth.json')
-const id = require('./id.json')
-const token = require('./token.json')
+const auth = require('./res/auth/auth.json')
+const id = require('./res/webhook/id.json')
+const token = require('./res/webhook/token.json')
 const embed = require('./embed.js')
-
+const embedHelp = require('./embedHelp.js')
 
 const bot = new Discord.Client()
 const idArray = jsonToArray(id)
@@ -22,7 +22,7 @@ function jsonToArray(reqJSON) {
 bot.once('ready', () => {
     console.log(`Logged in as ${bot.user.tag}!`)
     console.log("Embed:")
-    console.log(embed)
+    bot.channels.cache.get(auth.hostChannelID).send(embedHelp)
 });
 
 bot.on("message", async message => {
