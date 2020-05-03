@@ -34,6 +34,3 @@ e. Replace the value for hostChannelID with your current channel ID
 
 
 
-
-#### Credits
-Special thanks to UWEngSoc. 
