@@ -21,16 +21,17 @@ Host guild: player's guild that will host the bot
 
 Host channel: channel in which user interacts with the bot
 
-##### Step 1: Configure hostChannelID
+##### Step 1: Configure  auth
 a. Add bot to host guild.
 
 b. Select a channel that the bot has access to. This will be the host channel.
 
 c. Copy the channel's ID.
 
-d. Go to res>auth>auth.json
+d. Select auth.json (res/auth/auth.json)
 
 e. Replace the value for hostChannelID with your current channel ID
 
+f. Replace prefix with desired prefix (optional)
 
 
