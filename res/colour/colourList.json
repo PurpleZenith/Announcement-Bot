@@ -1,0 +1,66 @@
+{
+    "Black": {
+        "colorId": 0,
+        "hexString": "#000000"
+    },
+    "Maroon": {
+        "colorId": 1,
+        "hexString": "#800000"
+    },
+    "Green": {
+        "colorId": 2,
+        "hexString": "#008000"
+    },
+    "Olive": {
+        "colorId": 3,
+        "hexString": "#808000"
+    },
+    "Navy": {
+        "colorId": 4,
+        "hexString": "#000080"
+    },
+    "Purple": {
+        "colorId": 5,
+        "hexString": "#800080"
+    },
+    "Teal": {
+        "colorId": 6,
+        "hexString": "#008080"
+    },
+    "Silver": {
+        "colorId": 7,
+        "hexString": "#c0c0c0"
+    },
+    "Grey": {
+        "colorId": 8,
+        "hexString": "#808080"
+    },
+    "Red": {
+        "colorId": 9,
+        "hexString": "#ff0000"
+    },
+    "Lime": {
+        "colorId": 10,
+        "hexString": "#00ff00"
+    },
+    "Yellow": {
+        "colorId": 11,
+        "hexString": "#ffff00"
+    },
+    "Blue": {
+        "colorId": 12,
+        "hexString": "#0000ff"
+    },
+    "Fuchsia": {
+        "colorId": 13,
+        "hexString": "#ff00ff"
+    },
+    "Aqua": {
+        "colorId": 14,
+        "hexString": "#00ffff"
+    },
+    "White": {
+        "colorId": 15,
+        "hexString": "#ffffff"
+    }
+}
