@@ -24,7 +24,7 @@ It is assumed that the user has enabled Developer mode in order to copy IDs.
 
 
 
-##### Step 1: Configure  auth.json - This requires Manage Servers permission
+#### Step 1: Configure  auth.json - This requires Manage Servers permission
 
 a. Add bot to host guild.
 
@@ -40,7 +40,7 @@ f. Replace the value for hostChannelID with your current channel ID
 
 g. (optional) Replace prefix with desired prefix. By default, it is the "+" character.
 
-##### Step 2: Configure id.json and token.json - This requires Manage Webhook permission
+#### Step 2: Configure id.json and token.json - This requires Manage Webhook permission
 
 a. 
 
