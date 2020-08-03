@@ -57,7 +57,3 @@ b. You will need to write your embed. For more information on how to write an em
 c. System.js will automatically pick the file named embed.js
 
 d. Additional instructions available upon running System.js
-
-#### Acknowledgement
-
-Thanks to the University of Waterloo Engineering Society
