@@ -3,7 +3,7 @@ By CompleteTheSquare
 
 ### Motivation 
 
-This bot-webhook system is meant to keep Discord server clusters well informed of important information. This is an original idea and any ressemblance to other projects is purely coincidental.
+This bot-webhook system is meant to keep Discord server clusters well informed of important information.
 
 ### How it works
 First, the user adds the bot to the server. They then configure auth.json the bot in and add the required information. The user then creates a webhook in their servers then configures id.json and token.json. After running System.js, the user should then follow instructions found in the startup embed to send their embed.
