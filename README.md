@@ -1,4 +1,4 @@
-# PhoenixWebhooks
+# Announcement Bot
 By CompleteTheSquare
 
 ### Motivation 
