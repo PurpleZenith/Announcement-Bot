@@ -1,5 +1,5 @@
 # Announcement Bot
-By CompleteTheSquare
+By PurpleZenith
 
 ### Motivation 
 
